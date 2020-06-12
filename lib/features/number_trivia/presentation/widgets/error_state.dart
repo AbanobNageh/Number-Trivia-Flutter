@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:numbertrivia/core/localization/app_localization.dart';
 
 class ErrorState extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class ErrorState extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
         child: Center(
           child: Text(
-            "An error occurred!!",
+            AppLocalization.of(context).triviaError,
             style: TextStyle(
               fontSize: 22,
               color: Colors.red,

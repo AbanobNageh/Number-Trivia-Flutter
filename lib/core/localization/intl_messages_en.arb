@@ -1,0 +1,40 @@
+{
+  "@@locale": "en",
+  "@@last_modified": "2020-06-12T17:46:13.593439",
+  "title": "Number Trivia",
+  "@title": {
+    "description": "App title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "triviaError": "An error occurred!!",
+  "@triviaError": {
+    "description": "Trivia error",
+    "type": "text",
+    "placeholders": {}
+  },
+  "triviaStartSearch": "Start Searching!!",
+  "@triviaStartSearch": {
+    "description": "Trivia search initial state",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterNumberHint": "Enter a number",
+  "@enterNumberHint": {
+    "description": "Trivia number text field hint",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchButtonText": "Search",
+  "@searchButtonText": {
+    "description": "Trivia search button text",
+    "type": "text",
+    "placeholders": {}
+  },
+  "getRandomTriviaButtonText": "Get random trivia",
+  "@getRandomTriviaButtonText": {
+    "description": "Trivia get random button text",
+    "type": "text",
+    "placeholders": {}
+  }
+}

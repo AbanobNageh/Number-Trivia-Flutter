@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:numbertrivia/core/localization/app_localization.dart';
 import 'package:numbertrivia/features/number_trivia/presentation/provider/trivia_provider.dart';
 
 class TriviaControls extends StatefulWidget {
@@ -28,7 +29,7 @@ class _TriviaControlsState extends State<TriviaControls> {
               textAlign: TextAlign.center,
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'enter a number',
+                labelText: AppLocalization.of(context).enterNumberHint,
               ),
             ),
             Row(
@@ -49,7 +50,7 @@ class _TriviaControlsState extends State<TriviaControls> {
                         FocusScope.of(context).unfocus();
                       },
                       color: Colors.green,
-                      child: Text('Search'),
+                      child: Text(AppLocalization.of(context).searchButtonText),
                     ),
                   ),
                 ),
@@ -64,7 +65,7 @@ class _TriviaControlsState extends State<TriviaControls> {
                         FocusScope.of(context).unfocus();
                         GetIt.I.get<TriviaProvider>().getRandomTrivia();
                       },
-                      child: Text('Get random trivia'),
+                      child: Text(AppLocalization.of(context).getRandomTriviaButtonText),
                     ),
                   ),
                 ),

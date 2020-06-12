@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get_it/get_it.dart';
+import 'package:numbertrivia/core/localization/app_localization.dart';
+import 'package:numbertrivia/core/localization/app_localization_delegate.dart';
 import 'package:numbertrivia/features/number_trivia/presentation/provider/trivia_provider.dart';
 import 'package:numbertrivia/features/number_trivia/presentation/screens/main_screen.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +21,16 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => GetIt.instance.get<TriviaProvider>(),
       child: MaterialApp(
-        title: 'Flutter Demo',
+        onGenerateTitle: (context) => AppLocalization.of(context).title,
+        localizationsDelegates: [
+          const AppLocalizationDelegate(),
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate
+        ],
+        supportedLocales: [
+          const Locale('en'),
+          const Locale('ar'),
+        ],
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),

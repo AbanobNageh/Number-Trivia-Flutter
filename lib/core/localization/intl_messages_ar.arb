@@ -1,0 +1,40 @@
+{
+  "@@locale": "ar",
+  "@@last_modified": "2020-06-12T17:46:13.593439",
+  "title": "معلومات الارقام",
+  "@title": {
+    "description": "App title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "triviaError": "لقد حدث خطا!!",
+  "@triviaError": {
+    "description": "Trivia error",
+    "type": "text",
+    "placeholders": {}
+  },
+  "triviaStartSearch": "ابدا بالبحث",
+  "@triviaStartSearch": {
+    "description": "Trivia search initial state",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterNumberHint": "ادخل رقم",
+  "@enterNumberHint": {
+    "description": "Trivia number text field hint",
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchButtonText": "ابحث",
+  "@searchButtonText": {
+    "description": "Trivia search button text",
+    "type": "text",
+    "placeholders": {}
+  },
+  "getRandomTriviaButtonText": "معلومه عشوائيه",
+  "@getRandomTriviaButtonText": {
+    "description": "Trivia get random button text",
+    "type": "text",
+    "placeholders": {}
+  }
+}

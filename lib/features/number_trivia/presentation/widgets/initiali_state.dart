@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:numbertrivia/core/localization/app_localization.dart';
 
 class InitialState extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class InitialState extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
         child: Center(
           child: Text(
-            "Start Searching!!",
+            AppLocalization.of(context).triviaStartSearch,
             style: TextStyle(
               fontSize: 22,
             ),
